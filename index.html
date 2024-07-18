@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="/assets/favicon/favicon-16x16.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="/javascript/index.js" defer></script>
+    
+    <script>
+        (function(){
+            emailjs.init("dUH0PEQH0r_iQzJ33"); // Replace 'YOUR_USER_ID' with your EmailJS user ID
+        })();
+    </script>
+
+</head>
+<body class="lightmode">
+    <button class="scroll-button-up"><i class="fa fa-arrow-up"></i></button>
+    <div class="navbar-root">
+        <div class="navbar-container">
+            <a href="#home" class="logo"><img src="/assets/images/Logo black.png" alt="logo"></a>
+            <nav>
+                <a href="#home">home</a>
+                <a href="#about">about</a>
+                <a href="#projects">projects</a>
+                <a href="#contacts">contacts</a>
+                <button class="nav-icon darkmode-button"><img src="/assets/images/light-mode.svg" alt="darkmode"></button>
+                <button class="nav-icon menu-button"><img src="/assets/images/menu-icon.svg" alt="menu"></button>
+            </nav>
+        </div>
+    </div>
+    
+    <div class="main-root">
+        <div class="home-background">
+            <section id="home">
+                <div class="home-text">
+                    <p>web developer | front-end</p>
+                    <h1><span>jes sa</span>nterson luis domisiw</h1>
+                    <a href="/assets/file/Jes Santerson L. Domisiw.pdf" download>download cv</a>
+                </div>
+            </section>
+        </div>
+        <section id="about">
+            <h2>about</h2>
+            <div class="about-container">
+                <div class="about-card">
+                    <img src="/assets/images/personalphotos/about4.png" alt="personal photo">
+                </div>
+                <div class="about-text">
+                    <p><span>I</span> finished my studies in 2023 and have a Bachelor's degree in Computer Engineering. I have a solid foundation from my academic experience, and I can't wait to use it in a stimulating and demanding work setting.
+                    <br><br><span>Apart</span> from my technical expertise, I am a proactive, committed person with excellent communication and teamwork skills. I can't wait to provide my excitement and distinct viewpoint to a progressive company so I may work on creative projects and advance my career.</p>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>projects</h2>
+            <div class="project-container">
+                <div class="project-card">
+                    <img src="/assets/images/projects/fireforce.png" alt="fireforce picture">
+                </div>
+                <div class="project-info">
+                    <div class="info">
+                        <h3>FireForce</h3>
+                        <p>Description: A comprehensive online platform designed to showcase and sell a wide range of high-quality gun products, providing a convenient shopping experience for enthusiasts and professionals alike.</p>
+                    </div>
+                    <div class="link">
+                        <a href="https://github.com/WEI-AI-DAIYU/Gun-store" class="project-icon" target=”_blank”><img src="/assets/images/github-icon.png" alt=""></a>
+                        <a href="https://gun-store.vercel.app/index.html" class="project-link" target=”_blank”>https://gun-store.vercel.app/ <img src="/assets/images/external-link-icon.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-container">
+                <div class="project-card">
+                    <img src="/assets/images/projects/filrecipes.png" alt="filrecipes picture">
+                </div>
+                <div class="project-info">
+                    <div class="info">
+                        <h3>FilRecipes</h3>
+                        <p>Description: A comprehensive online platform designed to showcase and sell a wide range of high-quality gun products, providing a convenient shopping experience for enthusiasts and professionals alike.</p>
+                    </div>
+                    <div class="link">
+                        <a href="https://github.com/WEI-AI-DAIYU/FilRecipes/tree/main" class="project-icon" target=”_blank”><img src="/assets/images/github-icon.png" alt=""></a>
+                        <a href="https://fil-recipes.vercel.app/" class="project-link" target=”_blank”>https://fil-recipes.vercel.app/ <img src="/assets/images/external-link-icon.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-container">
+                <div class="project-card">
+                    <img src="/assets/images/projects/computer-shop.png" alt="computer shop app picture">
+                </div>
+                <div class="project-info">
+                    <div class="info">
+                        <h3>Computer Shop <span>(visual basic)</span></h3>
+                        <p>Description: A robust VB.NET application designed to manage and streamline operations in a computer shop business. The system efficiently records service time, tracks pricing, and manages customer transactions.</p>
+                    </div>
+                    <div class="link">
+                        <a href="https://github.com/WEI-AI-DAIYU/Computer-Shop" class="project-icon" target=”_blank”><img src="/assets/images/github-icon.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacts">
+            <h2>contact me</h2>
+            <div class="contact-container">
+                <div class="contact-hit-me-up">
+                    <h4>hit me up</h4>
+                    <p>@ jessanterson07@gmail.com</p>
+                    <i class="fa fa-envelope-o"></i>
+                </div>
+                <form id="contact-form">
+                    <div class="name form">
+                        <label for="from_name">Name:</label>
+                        <input type="text" id="from_name" name="from_name" autocomplete="off" required>
+                    </div>
+                
+                    <div class="email form">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" autocomplete="off" required>
+                    </div>
+                
+                    <div class="message form">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <p id="status"></p>
+                
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="border"><img src="/assets/images/footer2.png" alt=""></div>
+            <h5>copyright © jes santerson.</h5>
+        </div>
+    </footer>
+    
+</body>
+</html>
