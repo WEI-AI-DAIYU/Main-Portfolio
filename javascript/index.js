@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const bgProjectContainer = document.querySelectorAll(".project-container");
     const bgProjectCard = document.querySelectorAll(".project-card");
     const bgProjectCardImg = document.querySelectorAll(".project-card>img");
+    const bgProjectInfo = document.querySelectorAll(".project-info");
     const bgInfo = document.querySelectorAll(".info");
     const bgInfoLink = document.querySelectorAll(".link");
     const bgLink = document.querySelectorAll(".project-link");
@@ -141,6 +142,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 link.classList.add('darkmode');
                 link.classList.remove('lightmode');
             });
+            //project bg Project info
+            bgProjectInfo.forEach(link => {
+                link.classList.add('darkmode');
+                link.classList.remove('lightmode');
+            });
             //project bg info
             bgInfo.forEach(link => {
                 link.classList.add('darkmode');
@@ -218,6 +224,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 link.classList.add('lightmode');
                 link.classList.remove('darkmode');
             });
+            //project bg Project info
+            bgProjectInfo.forEach(link => {
+                link.classList.add('lightmode');
+                link.classList.remove('darkmode');
+            });
             //project bg info
             bgInfo.forEach(link => {
                 link.classList.add('lightmode');
@@ -281,7 +292,7 @@ const scrollBtnUp = document.querySelector(".scroll-button-up");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if(document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+    if(document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
         scrollBtnUp.style.display = "block";
         
     

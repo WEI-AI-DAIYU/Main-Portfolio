@@ -67,8 +67,8 @@ nav>a.darkmode {
     box-shadow: 4px 8px 5px rgba(239, 68, 68, 0.4), 0 2px 20px 0 rgba(239, 68, 68, 0.19);
 }
 .project-container.darkmode:hover {
-    border-radius: 0 0 24px 24px;
-    box-shadow: 4px 8px 5px rgba(255, 0, 0, 0.4), 0 6px 20px 0 rgba(255, 0, 0, 0.19);
+    border-radius: 0 24px 24px 0;
+    box-shadow: 4px 8px 5px rgba(255, 0, 0, 0.5), 0 6px 20px 0 rgba(255, 0, 0, 0.5);
     transition: box-shadow .2s ease-in, border-radius .1s ease-in;
 }
 .info.darkmode {
@@ -92,6 +92,7 @@ nav>a.darkmode {
 }
 #contact-form.darkmode:hover {
     box-shadow: 0 2px 5px rgba(255, 255, 255, 0.5);
+    transition: box-shadow 0.2s ease-in;
 }
 .border.darkmode {
     background-color: rgb(245, 245, 245);
@@ -102,7 +103,6 @@ footer.darkmode {
     transition: background-color 0.2s ease-in;
 }
 .lightmode {
-    
     transition: background-color .2s ease-in, color .2s ease-in;
 }
 
@@ -371,12 +371,9 @@ h2 {
     padding: 100px 0 50px;
 }
 .project-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    border-radius: 24px;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: 1.5fr .75fr;
+    border-radius: 0 24px 24px 0;
     margin: 50px 0;
     box-shadow: 4px 8px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -388,22 +385,20 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 8px;
     border-radius: 14px;
     background-color: rgb(255, 255, 255);
     box-shadow: 4px 8px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .project-card>img {
-    width: 500px;
-    border-radius: 6px;
+    width: 100%;
 }
 .project-info {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     border-radius: 14px;
-    padding: 8px;
+    padding: 18px;
     gap: 8px;
     min-height: 274px;
     height: auto;
@@ -500,7 +495,11 @@ h4 {
     padding: 8px;
     gap: 20px;
     border-radius: 10px;
+    border: 0.5px solid rgb(0, 0, 0, 0.2);
+}
+#contact-form:hover {
     box-shadow: 4px 8px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: box-shadow 0.2s ease-in;
 }
 .form {
     display: flex;
@@ -576,32 +575,24 @@ h5 {
 
 @media screen and (max-width: 960px) {
     .project-container {
+        display: flex;
         flex-direction: column;
         gap: 0;
-    }
-    .project-container.darkmode {
-        padding-top: 0;
+        padding: 0;
+        transition: padding .2s ease-in;
         border-radius: 0 0 24px 24px;
     }
-    .project-card.darkmode {
-        padding: 0;
-    }
     .project-card {
-        border-radius: 14px 14px 0 0;
+        border-radius: 0;
         padding-bottom: 0;
         box-shadow: none;
-    }
-    .project-card>img {
-        width: 90vw;
-    }
-    .project-card>img.darkmode {
-        width: 92vw;
-        border-radius: 0;
+        padding: 0;
     }
     .project-info {
-        padding: 0;
+        padding: 0 10px 10px 10px;
         width: 92vw;
         border-radius: 0 0 14px 14px;
+        transition: padding .2s ease-in;
     }
     .info {
         border-radius: 0;
@@ -609,6 +600,33 @@ h5 {
     .link {
         border-radius: 6px 6px 14px 14px;
     }
+    .project-card>img {
+        width: 92vw;
+        border-radius: 0;
+    }
+    .project-container.darkmode {
+        padding: 0 10px 10px 10px;
+        border-radius: 12px 12px 24px 24px;
+        transition: padding .2s ease-in;
+    }
+    .project-card.darkmode {
+        padding: 0;
+    }
+    
+    .project-card>img.darkmode {
+        width: 92vw;
+        border-radius: 0;
+    }
+    .project-info.darkmode {
+        padding: 0;
+        transition: padding .2s ease-in;
+    }
+    .project-container.darkmode:hover {
+        border-radius: 0 0 24px 24px;
+        box-shadow: 4px 8px 5px rgba(255, 0, 0, 0.4), 0 6px 20px 0 rgba(255, 0, 0, 0.19);
+        transition: box-shadow .2s ease-in, border-radius .1s ease-in;
+    }
+    
 
     
 }
