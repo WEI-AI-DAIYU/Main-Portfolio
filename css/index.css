@@ -280,7 +280,7 @@ nav>a:hover {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    /*border: 1px solid red;      /* debug */
+    /* border: 1px solid red;      /* debug */
 }
 .home-text>p {
     text-transform: capitalize;
@@ -302,6 +302,7 @@ nav>a:hover {
     padding: 20px;
     background-color: rgb(229,9,20);
     white-space: pre;
+    margin-top: 50px;
 }
 .home-text>a:hover {
     background-color: rgb(178,7,16);
